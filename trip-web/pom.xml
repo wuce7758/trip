@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>trip</artifactId>
+        <groupId>io.github.beizhi</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>trip-web</artifactId>
+    <packaging>war</packaging>
+    <name>trip-web Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <servlet-api.version>3.1.0</servlet-api.version>
+        <jetbrick-template-springmvc.version>2.1.2</jetbrick-template-springmvc.version>
+    </properties>
+
+    <dependencies>
+        <!-- 3)Spring web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- web -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.subchen</groupId>
+            <artifactId>jetbrick-template-springmvc</artifactId>
+            <version>${jetbrick-template-springmvc.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>trip-web</finalName>
+    </build>
+</project>
