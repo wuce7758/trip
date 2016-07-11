@@ -1,5 +1,7 @@
 package com.trip.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.trip.base.BaseServiceImpl;
 import com.trip.model.User;
 import com.trip.service.UserService;
@@ -15,6 +17,14 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
     public List<User> getUsers() {
         Example example = new Example(User.class);
         return super.selectList(example);
+    }
+
+    @Override
+    public PageInfo<User> getUserPage(int pageIndex, int pageSize) {
+        PageHelper.startPage(pageIndex, pageSize);
+        Example example = new Example(User.class);
+        List<User> list = super.selectList(example);
+        return new PageInfo<User>(list);
     }
 
     @Override

@@ -19,10 +19,9 @@
             </array>
         </property>
         <property name="typeAliasesPackage" value="com.trip.model"/>
-        <!--<property name="plugins">
+        <property name="plugins">
             <array>
                 <bean class="com.github.pagehelper.PageHelper">
-                    &lt;!&ndash; 这里的几个配置主要演示如何使用，如果不理解，一定要去掉下面的配置 &ndash;&gt;
                     <property name="properties">
                         <value>
                             dialect=mysql
@@ -34,7 +33,7 @@
                     </property>
                 </bean>
             </array>
-        </property>-->
+        </property>
     </bean>
 
     <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">

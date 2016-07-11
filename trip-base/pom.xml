@@ -17,6 +17,16 @@
             <artifactId>persistence-api</artifactId>
             <version>1.0.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

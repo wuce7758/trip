@@ -12,3 +12,11 @@
 - 文件系统支持
 - 国际化支持
 - 任务调度
+
+## 模块说明
+
+- trip-base：基础Model、接口定义
+- trip-common：工具类
+- trip-core：服务实现，供其他模块调用
+- trip-web：网站端
+- trip-api：API接口
